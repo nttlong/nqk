@@ -3,12 +3,12 @@ var apps;
     function start(moduleName, controllerName, injections) {
         injections.push("quicky");
         var mdl = angular.module(moduleName, injections);
-        var ctr = mdl.controller(controllerName, [
-            "$htmlLoader", "$scope", function (htmlLoader, scope) {
-                debugger;
-                console.log(htmlLoader);
-                htmlLoader("./test2.html", function (e, r) {
-                    alert("OK");
+        var ctr = quicky.controller(mdl, controllerName, [
+            "$viewCompiler", function (viewCompiler, scope) {
+                console.log(scope.$$urlInfo);
+                console.log(viewCompiler);
+                viewCompiler(scope, "./test2.html", function (e, r) {
+                    console.log(e);
                     console.log(r);
                 });
             }

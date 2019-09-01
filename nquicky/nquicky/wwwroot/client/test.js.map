@@ -1,1 +1,1 @@
-{"version":3,"file":"test.js","sourceRoot":"","sources":["test.ts"],"names":[],"mappings":"AAAA,CAAC,cAAQ,CAAC,CAAC,CAAA"}
+{"version":3,"file":"test.js","sourceRoot":"","sources":["test.ts"],"names":[],"mappings":"AAAA;IACI,OAAO,EAAE,UACL,KAA2B,EAC3B,KAAoB;QAEpB,KAAK,CAAC,KAAK,CAAC,CAAC;IACjB,CAAC;CACJ,CAAA"}

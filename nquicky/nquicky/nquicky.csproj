@@ -11,6 +11,10 @@
     <Content Remove="wwwroot\client\test.ts" />
   </ItemGroup>
 
+  <ItemGroup>
+    <TypeScriptCompile Remove="wwwroot\client\jqlite.d.ts" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />

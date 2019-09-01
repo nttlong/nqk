@@ -7,16 +7,16 @@
     ) {
         injections.push("quicky");
         var mdl = angular.module(moduleName, injections);
-        var ctr = mdl.controller(controllerName, [
-            "$htmlLoader","$scope", (
-            htmlLoader: quicky.IHtmlLoader,
+        var ctr = quicky.controller(  mdl,controllerName, [
+            "$viewCompiler", (
+                viewCompiler: quicky.services.IViewCompiler,
                 scope: quicky.IScope) => {
-                debugger;
-                console.log(htmlLoader);
-                htmlLoader("./test2.html", (e, r) => {
-                    alert("OK");
+                console.log(scope.$$urlInfo);
+                console.log(viewCompiler);
+                viewCompiler(scope, "./test2.html", (e, r) => {
+                    console.log(e);
                     console.log(r);
                 })
-        }]);
+            }]);
     }
 }

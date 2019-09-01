@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "signature": "b543cdef5d5ac262f080bfff6041c0cbcd34c786"
   },
   "compilationOptions": {
     "defines": [
@@ -26,7 +26,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
-          "Microsoft.NETCore.App": "2.2.0"
+          "Microsoft.NETCore.App": "2.2.0",
+          "Microsoft.TypeScript.MSBuild": "3.6.2"
         },
         "runtime": {
           "nquicky.dll": {}
@@ -35,6 +36,7 @@
           "nquicky.dll": {}
         }
       },
+      "Microsoft.TypeScript.MSBuild/3.6.2": {},
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -3236,6 +3238,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.TypeScript.MSBuild/3.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lUavJPFq644oh8xwLyfIXzRpjkX3lUWOZEPkQtLXR3v7J9LQ5NWsas3G4gcbFOjPsRNCHjjcMj6tx/gWr+CoyA==",
+      "path": "microsoft.typescript.msbuild/3.6.2",
+      "hashPath": "microsoft.typescript.msbuild.3.6.2.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
