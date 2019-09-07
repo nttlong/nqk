@@ -383,3 +383,17 @@ namespace quicky {
 
     }
 }
+namespace quicky {
+    mdl.directive("qTemplate", [() => {
+        return {
+            restrict: "ECA",
+            link: (s, e, a) => {
+                var url = s.$eval(a.qTemplate || a.url);
+                alert(url)
+                s.$watch<string>(a.qTemplate, (o, v) => {
+                    alert(o);
+                });
+            }
+        }
+    }])
+}

@@ -8,6 +8,8 @@
   <ItemGroup>
     <Content Remove="wwwroot\client\app.ts" />
     <Content Remove="wwwroot\client\quicky.ts" />
+    <Content Remove="wwwroot\client\rApp.ts" />
+    <Content Remove="wwwroot\client\requirejs.d.ts" />
     <Content Remove="wwwroot\client\test.ts" />
   </ItemGroup>
 

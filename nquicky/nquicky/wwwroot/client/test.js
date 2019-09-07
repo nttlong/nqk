@@ -1,6 +1,8 @@
 [
     "$http", function ($http, scope) {
-        alert($http);
+        scope.doLoadData = function () {
+        };
+        alert(scope.doLoadData);
     }
 ];
 //# sourceMappingURL=test.js.map

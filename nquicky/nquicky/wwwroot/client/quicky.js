@@ -333,4 +333,18 @@ var quicky;
     }
     quicky.controller = controller;
 })(quicky || (quicky = {}));
+(function (quicky) {
+    quicky.mdl.directive("qTemplate", [function () {
+            return {
+                restrict: "ECA",
+                link: function (s, e, a) {
+                    var url = s.$eval(a.qTemplate || a.url);
+                    alert(url);
+                    s.$watch(a.qTemplate, function (o, v) {
+                        alert(o);
+                    });
+                }
+            };
+        }]);
+})(quicky || (quicky = {}));
 //# sourceMappingURL=quicky.js.map
